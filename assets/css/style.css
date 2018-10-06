@@ -1,0 +1,328 @@
+/*
+  http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles, fonts
+  ========================================
+*/
+
+body {
+  background-image: url("gravel.png");
+  background-color: #ccc;
+  font: 300 16px/30px 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777;
+}
+
+/*
+  ========================================
+  headings
+  ========================================
+*/
+
+h1, h2 {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+h1 {    
+    color: #fff;
+}
+
+h2 {
+    color: #4aaaa5;    
+}
+
+/*
+  ========================================
+  page sizing
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.col-1-3 {
+    width: 33.33%;
+  }
+.col-2-3 {
+    width: 66.66%;
+  }
+
+/*
+  ========================================
+  Clearfix, used to contain float
+  ========================================
+*/
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+.claear {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.name {
+    padding: 22px;
+    float: left;
+    letter-spacing: .5px;
+    background: #4aaaa5;
+}
+
+.row {
+    background-color: #fff;
+    min-width: 960px;
+    margin-bottom: 30px;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+    text-align: right;
+  }
+  
+.nav li {
+    display: inline-block;
+    margin: 22px 10px;
+    vertical-align: top;
+    border-right: 1px solid #ddd;
+    padding-right: 10px;
+  }
+.nav li:last-child {
+    margin-right: 0;
+  }
+
+/*
+  ========================================
+  secondary heading
+  ========================================
+*/
+
+.secondary_heading {
+    padding-bottom: 22px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 22px;
+}
+
+/*
+  ========================================
+  image, profile
+  ========================================
+*/
+
+.image {
+    float: left;
+    margin-right: 22px;
+}
+
+/*
+  ========================================
+  section
+  ========================================
+*/
+
+.background {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 22px;
+    margin-bottom: 30px;
+}
+
+/*
+  ========================================
+  footer
+  ========================================
+*/
+
+.foot {
+    text-align: center;
+    padding-top: 22px;
+    background-color: #666;
+    border-top: 4px solid #4aaaa5;
+    color: #ddd;
+}
+
+/*
+  ========================================
+  links
+  ========================================
+*/
+
+a:hover {
+    color: red;
+  }
+  a {
+    color: #777;
+    text-decoration: none;
+  }
+
+/*
+  ========================================
+  picture
+  ========================================
+*/
+
+.pic {
+    width: 250px;
+    height: 200px;
+}
+
+.dimension {
+    display: inline-block;
+}
+
+.right-align {
+    margin-left: 22px;
+}
+
+.text {
+    text-align: center;
+    background-color: #4aaaa5;
+    width: 250px;
+    padding: 22px, auto;
+    color: #fff;
+    position: relative;
+    bottom: 70px;
+}
+
+/*
+  ========================================
+  Contact
+  ========================================
+*/
+
+.contact {
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.contact input,
+.contact textarea {
+    display: block;
+    margin: 5px 0 15px 0;
+    padding: 5px 8px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.button {
+    color: #fff;
+    background: #4aaaa5;
+    font-weight: 400;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+
+/*
+  ========================================
+  sticky footer
+  ========================================
+*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+.foot,
+.push {
+  height: 50px;
+}
+
+/*
+  ========================================
+  Media Queries
+  ========================================
+*/
+
+@media screen and (max-width: 980px) {
+
+  .wrapper {
+    width: 100%;
+  }
+
+}
