@@ -295,22 +295,18 @@ a:hover {
   sticky footer
   ========================================
 */
-
 html, body {
   height: 100%;
-  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
 }
 .wrapper {
-  min-height: 100%;
-
-  /* Equal to height of footer */
-  /* But also accounting for potential margin-bottom of last child */
-  margin-bottom: -50px;
+  flex: 1 0 auto;
 }
-
-.foot,
-.push {
-  height: 50px;
+.foot {
+  flex-shrink: 0;
 }
 
 /*
@@ -320,9 +316,33 @@ html, body {
 */
 
 @media screen and (max-width: 980px) {
-
   .wrapper {
     width: 100%;
   }
 
+  .container {
+    width: 50%;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
 }
